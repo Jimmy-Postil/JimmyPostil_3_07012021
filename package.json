@@ -1,0 +1,11 @@
+{
+  "name": "p3_postil_jimmy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/mains.scss:./publics/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
