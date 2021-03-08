@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="publics/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Shrikhand & display = swap" rel="stylesheet">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap" rel="stylesheet">
     <title>Ohmyfood</title>
 </head>
 <body>
@@ -14,17 +18,41 @@
         <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="header-logo-img"/>
 
         <div class="header-localisation">
-            <i class="fas fa-map-marker-alt"></i>
-            <h2> Paris, Belleville</h2>
+            <i class="fas fa-map-marker-alt header-localisation--icon"></i>
+            <h2>Paris, Belleville</h2>
         </div>
 
-        <section>
-            <h2>Réservez le menu qui vous convient</h2>
-            <h2>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
-            <button class="button-restaurant" type="submit">Explorer nos restaurants</button>
+    </header>
+
+        <section class="description">
+            <h2 class="description--first-title">Réservez le menu qui vous convient</h2>
+            <h2 class="description--second-title">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
+            <button class="description--button" type="submit">Explorer nos restaurants</button>
         </section>
 
-    </header>
+        <section class="functionning">
+
+            <h2>Fonctionnement</h2>
+
+            <div class="functionning--choice">
+                <p class="functionning__number">1</p>
+                <i class="fas fa-mobile-alt"></i>
+                <p>Choisissez un restaurant</p>
+            </div>
+
+            <div class="functionning--choice">
+                <p class="functionning__number">2</p>
+                <i class="fas fa-list-ul"></i>
+                <p>Composez votre menu</p>
+            </div>
+
+            <div class="functionning--choice">
+            <p class="functionning__number">3</p>
+            <i class="fas fa-store"></i>
+            <p>Dégustez au restaurant</p>
+            </div>
+        </section>
+
     
 </body>
 </html>
