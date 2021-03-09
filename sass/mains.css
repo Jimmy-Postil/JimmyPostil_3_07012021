@@ -40,6 +40,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 1000;
+  font-size: 20px;
   width: 100%;
   border-top: 3px solid #CECECE;
   background-color: #ECECEC;
@@ -67,10 +70,10 @@ header {
   text-align: center;
   padding-top: 20px;
   background-color: #f4f4f4;
-  font-family: "Shrikhand", sans-serif;
 }
 
 .description--first-title {
+  font-family: "Shrikand", sans-serif;
   font-size: 1.9em;
   font-weight: 600;
 }
@@ -95,7 +98,15 @@ header {
   background: linear-gradient(180deg, #9356DC, #FF79DA);
 }
 
+.description--button:hover {
+  opacity: 0.8;
+}
+
 .functionning {
+  height: auto;
+}
+
+.functionning--menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,7 +122,7 @@ header {
           align-items: center;
 }
 
-.functionning--choice {
+.functionning--menu__choice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,23 +130,68 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.1em;
-  margin-bottom: 20px;
+  background-color: #f4f4f4;
   border: 1px solid black;
-  padding: 10px 10px 10px 10px;
-  border-radius: 20%;
-  -webkit-box-shadow: 5px 5px 20px grey;
-          box-shadow: 5px 5px 20px grey;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  height: 80px;
+  width: 80%;
+  border: none;
+  -webkit-box-shadow: 1px 1px 15px #0000002e;
+          box-shadow: 1px 1px 15px #0000002e;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  cursor: pointer;
 }
 
-.functionning--choice__number {
-  margin-right: 15px;
+.functionning--menu__choice:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.functionning-title {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.functionning--number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto";
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+  background-color: #9356DC;
+  border-radius: 100%;
+  font-size: 1em;
+  color: white;
+  position: relative;
+  left: -15px;
+}
+
+.functionning--icon {
+  font-size: 1.2em;
+  margin-left: 10px;
+  margin-right: 25px;
+}
+
+.functionning--different {
+  font-size: 1.1em;
+  font-family: sans-serif;
+  font-weight: 700;
 }
 /*# sourceMappingURL=mains.css.map */
