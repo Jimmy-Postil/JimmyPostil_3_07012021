@@ -63,6 +63,9 @@ body{
     50%{
         opacity: 1;
     }
+    90%{
+        opacity: 1;
+    }
     100%{
         opacity: 0;
     }
@@ -81,7 +84,7 @@ body{
 .loader{
     position: absolute;
     margin: auto;
-    top: 0;
+    top: 0px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -95,8 +98,8 @@ body{
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
-    animation: loader 2s  250ms linear;
-    -webkit-animation: loader 3s  250ms linear;
+    animation: loader 3.5s  250ms linear;
+    -webkit-animation: loader 3.5s  250ms linear;
 }
 
 .loader p{
@@ -340,10 +343,14 @@ header{
         z-index: 2;
         opacity: 1;
         background: -webkit-linear-gradient($color-primary, $color-secondary);
-        -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        transition: 0.5s;
-    }
+        -webkit-text-fill-color: transparent;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+}
 }
 
 .restaurants--new{
@@ -380,7 +387,7 @@ footer p{
     font-family: "Roboto", sans-serif;
     font-size: 1.1em;
     margin: 0%;
-    margin-top: 5px;
+    margin-top: 8px;
     &:hover{
         text-decoration: underline;
         cursor: pointer;
@@ -392,12 +399,12 @@ footer p{
     flex-direction: row;
     align-items: center;
     &--icons{
-        margin-top: 5px;
+        margin-top: 8px;
         font-size: 0.9em;
         margin-right: 10px;
     }
     &--icons2{
-        margin-top: 5px;
+        margin-top: 8px;
         font-size: 0.7em;
         margin-right: 8px;
     }
@@ -406,4 +413,123 @@ footer p{
 .footer-contact a{
     text-decoration: none;
     color: white;
+}
+
+
+/*-------------------------CSS page de menu--------------------*/
+
+
+.header-menu-logo-img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+
+.header-arrow{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-size: 1.4em;
+    color: black;
+}
+
+.header-image{
+    width: 100%;
+}
+
+.image-restaurant{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenair-menu{
+    position: relative;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    margin-top: -80px;
+    background-color: $background-color;
+    border-radius: 40px 40px 0px 0px;
+    -webkit-border-radius: 40px 40px 0px 0px;
+    -moz-border-radius: 40px 40px 0px 0px;
+    -ms-border-radius: 40px 40px 0px 0px;
+    -o-border-radius: 40px 40px 0px 0px;
+}
+
+.contenair-menu h2{
+    padding-left: 25px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+.menu-separator{
+    border: 2px solid $color-tertiary;
+    width: 50px;
+    margin-top: -10px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.menu-disposition{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    &--title{
+        font-family: "Shrikhand", sans-serif;
+        font-size: 1.6em;
+
+        &__icon{
+            font-size: 1.7em;
+        }
+    }
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu--entries{
+    @include menu
+}
+
+.menu--plats{
+    @include menu
+}
+
+.menu--desserts{
+    @include menu
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-command{
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 50px 15px 50px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: $color-primary;
+    background: linear-gradient(0deg, $color-primary, $color-secondary);
+    &:hover{
+        opacity: 0.8;
+    }
 }
