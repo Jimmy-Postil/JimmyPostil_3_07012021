@@ -276,6 +276,11 @@ header {
   cursor: pointer;
 }
 
+.restaurants--palette a {
+  text-decoration: none;
+  color: black;
+}
+
 .restaurants--note {
   z-index: 0;
 }
@@ -283,12 +288,27 @@ header {
   cursor: pointer;
 }
 
+.restaurants--note a {
+  text-decoration: none;
+  color: black;
+}
+
 .restaurants--french:hover {
   cursor: pointer;
 }
 
+.restaurants--french a {
+  text-decoration: none;
+  color: black;
+}
+
 .restaurants--delice:hover {
   cursor: pointer;
+}
+
+.restaurants--delice a {
+  text-decoration: none;
+  color: black;
 }
 
 .restaurants--image {

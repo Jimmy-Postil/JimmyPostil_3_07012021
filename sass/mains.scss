@@ -277,12 +277,22 @@ header{
     }
 }
 
+.restaurants--palette a{
+    text-decoration: none;
+    color: black
+}
+
 .restaurants--note{
     @extend %restaurants;
     z-index: 0;
     &:hover{
         cursor: pointer
     }
+}
+
+.restaurants--note a{
+    text-decoration: none;
+    color: black
 }
 
 .restaurants--french{
@@ -292,11 +302,21 @@ header{
     }
 }
 
+.restaurants--french a{
+    text-decoration: none;
+    color: black
+}
+
 .restaurants--delice{
     @extend %restaurants;
     &:hover{
         cursor: pointer
     }
+}
+
+.restaurants--delice a{
+    text-decoration: none;
+    color: black
 }
 
 .restaurants--image{
@@ -481,7 +501,6 @@ footer p{
     &--title{
         font-family: "Shrikhand", sans-serif;
         font-size: 1.6em;
-
         &__icon{
             font-size: 1.7em;
         }
@@ -498,7 +517,7 @@ footer p{
 
 
 .menu--entries{
-    @include menu
+    @include menu;
 }
 
 .menu--plats{
