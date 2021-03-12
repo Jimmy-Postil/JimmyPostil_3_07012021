@@ -566,12 +566,21 @@ footer p:hover {
   grid-template-columns: 1fr;
 }
 
+.menu--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (min-width: 991px) {
   .menu-desktop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
   }
+}
+
+.menu--column {
+  display: none;
 }
 
 .menu--entries {
@@ -605,9 +614,7 @@ footer p:hover {
   text-overflow: ellipsis;
 }
 .menu--entries_title_txt__price {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  padding-right: 20px;
   font-weight: bold;
 }
 
@@ -642,9 +649,7 @@ footer p:hover {
   text-overflow: ellipsis;
 }
 .menu--plats_title_txt__price {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  padding-right: 20px;
   font-weight: bold;
 }
 
@@ -679,9 +684,7 @@ footer p:hover {
   text-overflow: ellipsis;
 }
 .menu--desserts_title_txt__price {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  padding-right: 20px;
   font-weight: bold;
 }
 
