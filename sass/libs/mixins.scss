@@ -11,9 +11,6 @@
 }
 
 @mixin menu {
-    position: relative;
-    display: flex;
-    flex-direction: column;
     font-family: "Roboto", sans-serif;
     box-shadow: 1px 1px 15px #0000002e;
     padding-left: 15px;
@@ -25,18 +22,27 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    @include desktop{
-        margin-left: 30px;
-    }    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     &_title{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 1.3em;
         margin-top: 10px;
         margin-bottom: -10px;
+        &_txt{
+            width: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         &__price{
-            position: absolute;
-            top: 28px;
-            right: 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
             font-weight: bold;
         }
+    }
 }
 }
