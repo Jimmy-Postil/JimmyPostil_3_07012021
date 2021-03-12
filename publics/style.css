@@ -162,14 +162,14 @@ header {
   width: 70%;
   margin-bottom: 0%;
 }
-.description--second-title {
+.description--first-title_second-title {
   font-family: "Roboto", sans-serif;
   font-size: 1.3em;
   width: 90%;
   color: rgba(0, 0, 0, 0.6);
   font-weight: normal;
 }
-.description--button {
+.description--first-title_second-title__button {
   font-family: "Roboto", sans-serif;
   color: white;
   font-size: 1.2em;
@@ -182,7 +182,7 @@ header {
   background-color: #9356DC;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
 }
-.description--button:hover {
+.description--first-title_second-title__button:hover {
   opacity: 0.8;
 }
 
@@ -194,6 +194,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 991px) {
+  .functionning--menu {
+    flex-direction: row;
+  }
 }
 .functionning--menu__choice {
   display: flex;
@@ -207,7 +212,14 @@ header {
   width: 90%;
   border: none;
   box-shadow: 1px 1px 15px #0000002e;
-  cursor: pointer;
+}
+@media screen and (min-width: 991px) {
+  .functionning--menu__choice {
+    height: 80px;
+    margin-right: 40px;
+    margin-left: 20px;
+    width: 500px;
+  }
 }
 
 .functionning-title {
@@ -263,10 +275,15 @@ header {
 }
 
 .restaurants--choice {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+@media screen and (min-width: 991px) {
+  .restaurants--choice {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .restaurants--palette {
@@ -277,8 +294,8 @@ header {
 }
 
 .restaurants--palette a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 .restaurants--note {
@@ -289,8 +306,8 @@ header {
 }
 
 .restaurants--note a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 .restaurants--french:hover {
@@ -298,8 +315,8 @@ header {
 }
 
 .restaurants--french a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 .restaurants--delice:hover {
@@ -307,8 +324,8 @@ header {
 }
 
 .restaurants--delice a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 .restaurants--image {
@@ -426,6 +443,19 @@ footer p:hover {
   color: white;
 }
 
+@media screen and (min-width: 991px) {
+  .footer-bloc {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .footer-bloc p {
+    margin-right: 100px;
+  }
+}
+
 /*-------------------------CSS page de menu--------------------*/
 .header-menu-logo-img {
   margin-top: 10px;
@@ -446,9 +476,15 @@ footer p:hover {
 }
 
 .image-restaurant {
-  height: 300px;
+  height: 250px;
   width: 100%;
   object-fit: cover;
+}
+@media screen and (min-width: 991px) {
+  .image-restaurant {
+    height: 500px;
+    margin-top: 5px;
+  }
 }
 
 .contenair-menu {
@@ -465,56 +501,88 @@ footer p:hover {
 }
 
 .contenair-menu h2 {
-  padding-left: 25px;
   text-transform: uppercase;
+  margin-left: 15px;
   font-size: 1.3em;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
+}
+@media screen and (min-width: 991px) {
+  .contenair-menu h2 {
+    margin-left: 30px;
+  }
 }
 
 .menu-separator {
   border: 2px solid #99E2D0;
   width: 50px;
+  margin-left: 15px;
   margin-top: -10px;
-  margin-left: 25px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 991px) {
+  .menu-separator {
+    margin-left: 30px;
+  }
 }
 
 .menu-disposition {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 991px) {
+  .menu-disposition {
+    justify-content: center;
+  }
 }
 .menu-disposition--title {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.6em;
+  padding-left: 20px;
+}
+@media screen and (min-width: 991px) {
+  .menu-disposition--title {
+    font-size: 3em;
+    padding-right: 50px;
+  }
 }
 .menu-disposition--title__icon {
   font-size: 1.7em;
+  padding-right: 30px;
+}
+@media screen and (min-width: 991px) {
+  .menu-disposition--title__icon {
+    font-size: 2.5em;
+  }
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .menu--entries {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 90%;
   font-family: "Roboto", sans-serif;
   box-shadow: 1px 1px 15px #0000002e;
   padding-left: 15px;
   margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+@media screen and (min-width: 991px) {
+  .menu--entries {
+    margin-left: 30px;
+  }
 }
 .menu--entries_title {
   font-size: 1.3em;
@@ -532,16 +600,22 @@ footer p:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 90%;
   font-family: "Roboto", sans-serif;
   box-shadow: 1px 1px 15px #0000002e;
   padding-left: 15px;
   margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+@media screen and (min-width: 991px) {
+  .menu--plats {
+    margin-left: 30px;
+  }
 }
 .menu--plats_title {
   font-size: 1.3em;
@@ -559,16 +633,22 @@ footer p:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 90%;
   font-family: "Roboto", sans-serif;
   box-shadow: 1px 1px 15px #0000002e;
   padding-left: 15px;
   margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+@media screen and (min-width: 991px) {
+  .menu--desserts {
+    margin-left: 30px;
+  }
 }
 .menu--desserts_title {
   font-size: 1.3em;
@@ -588,8 +668,7 @@ footer p:hover {
   justify-content: center;
   align-items: center;
 }
-
-.button-command {
+.button--command {
   justify-content: center;
   font-family: "Roboto", sans-serif;
   color: white;
@@ -598,12 +677,13 @@ footer p:hover {
   border-radius: 30px;
   border: none;
   outline: none;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   background-color: #9356DC;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
 }
-.button-command:hover {
+.button--command:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
