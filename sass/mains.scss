@@ -73,7 +73,7 @@ body{
     }
 }
 
-
+/*
 .animation{
     position: absolute;
     top: 0;
@@ -115,7 +115,7 @@ body{
     font-weight: bold;
     animation: loader2 2s 250ms;
     -webkit-animation: loader2 2s 250ms;
-}
+}*/
 
 
 header{
@@ -181,7 +181,10 @@ header{
         background-color: $color-primary;
         background: linear-gradient(0deg, $color-primary, $color-secondary);
         &:hover{
+            cursor: pointer;
             opacity: 0.8;
+            box-shadow: 1px 1px 15px #000;
+
         }
     }
 }
@@ -198,19 +201,31 @@ header{
         align-items: center;
         @include desktop{
             flex-direction: row;
+            margin-left: 20px;
         }
     &__choice{
         display: flex;
         flex-direction: row;
         align-items: center;
         background-color: $background-color;
-        border: 1px solid black;
         border-radius: 30px;
         margin-bottom: 30px;
         height: 90px;
         width: 90%;
-        border: none;
+        transform: scale(0.9);
         box-shadow: 1px 1px 15px #0000002e;
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        &:hover{
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            cursor: pointer;
+}
         @include desktop{
             height: 80px;
             margin-right: 40px;
@@ -221,6 +236,15 @@ header{
     }
 }
 
+.functionning--menu__choice{
+    &:hover{
+        background-color:  rgb(253, 242, 255);
+        & > .functionning--icon{
+            color: $color-primary;
+            opacity: 1;
+        }
+    }
+}
 .functionning-title{
     font-size: 1.7em;
     font-family: "Roboto", sans-serif;
@@ -523,10 +547,12 @@ footer p{
 
 .menu-separator{
     border: 2px solid $color-tertiary;
+    background-color: $color-tertiary;
+    height: 0px;
     width: 50px;
+    margin-bottom: 10px;
     margin-left: 15px;
-    margin-top: -10px;
-    margin-bottom: 20px;
+    margin-top: -15px;
 }
 
 .menu-disposition{
@@ -561,6 +587,7 @@ footer p{
     grid-template-columns: 1fr;
 }
 
+
 .menu--flex{
     display: flex;
     justify-content: space-between;
@@ -572,10 +599,6 @@ footer p{
         grid-template-columns: repeat(3,1fr);
         column-gap: 1rem;
     }
-}
-
-.menu--column{
-    display: none;
 }
 
 
@@ -592,6 +615,14 @@ footer p{
     @include menu
 }
 
+.menu--spinner{
+    background-color: $color-tertiary;
+    &_check{
+        font-size: 1.5em;
+        width: 50px;
+        color: #fff;
+    }
+}
 
 .button{
     display: flex;
