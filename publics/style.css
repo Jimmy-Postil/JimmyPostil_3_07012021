@@ -14,6 +14,7 @@ body {
   margin: 0;
 }
 
+/*----------------animation Keyframes------------*/
 @keyframes loader {
   0% {
     transform: rotate(0deg) scale(1);
@@ -75,49 +76,69 @@ body {
     z-index: -1;
   }
 }
-/*
-.animation{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
-    background-color: white;
-    animation: animation 2s linear forwards;
-    -webkit-animation: animation 2s linear forwards;
+@keyframes animation-menu {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -ms-transform: translatex(0);
+    -o-transform: translatex(0);
+  }
+}
+/*--------------loader--------------*/
+.animation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+  animation: animation 2s linear forwards;
+  -webkit-animation: animation 2s linear forwards;
 }
 
-.loader{
-    position: fixed;
-    margin-left: -100px;
-    margin-top: -100px;
-    top: 50%;
-    left: 50%;
-    height: 200px;
-    width: 200px;
-    border: 5px solid black;
-    border-top-color: blueviolet;
-    border-bottom-color: blueviolet;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    animation: loader 3.5s  250ms linear;
-    -webkit-animation: loader 3.5s  250ms linear;
+.loader {
+  position: fixed;
+  margin-left: -100px;
+  margin-top: -100px;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  width: 200px;
+  border: 5px solid black;
+  border-top-color: blueviolet;
+  border-bottom-color: blueviolet;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  animation: loader 3.5s 250ms linear;
+  -webkit-animation: loader 3.5s 250ms linear;
 }
 
-.loader p{
-    text-align: center;
-    position: absolute;
-    top: 65px;
-    left: 25px;
-    color: $color-primary;
-    font-size: 1.6em;
-    font-weight: bold;
-    animation: loader2 2s 250ms;
-    -webkit-animation: loader2 2s 250ms;
-}*/
+.loader p {
+  text-align: center;
+  position: absolute;
+  top: 65px;
+  left: 25px;
+  color: #9356DC;
+  font-size: 1.6em;
+  font-weight: bold;
+  animation: loader2 2s 250ms;
+  -webkit-animation: loader2 2s 250ms;
+}
+
+/*---------------------header------------------*/
 header {
   display: flex;
   flex-direction: column;
@@ -149,6 +170,7 @@ header {
   font-size: 1.5em;
 }
 
+/*--------------------------section description------------------------*/
 .description {
   display: flex;
   flex-direction: column;
@@ -190,6 +212,7 @@ header {
   box-shadow: 1px 1px 15px #000;
 }
 
+/*-------------------------section fonctionnement----------------------*/
 .functionning {
   height: auto;
 }
@@ -286,6 +309,7 @@ header {
   font-weight: 700;
 }
 
+/*--------------------------section restaurants--------------------*/
 .restaurants {
   background-color: #f4f4f4;
   padding-bottom: 30px;
@@ -419,6 +443,7 @@ header {
   font-size: 1.1em;
 }
 
+/*----------------------footer----------------*/
 footer {
   padding-top: 15px;
   padding-bottom: 40px;
@@ -486,6 +511,7 @@ footer p:hover {
 }
 
 /*-------------------------CSS page de menu--------------------*/
+/*----------------------header-------------------*/
 .header-menu-logo-img {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -516,6 +542,7 @@ footer p:hover {
   }
 }
 
+/*-----------------section contenair-menu------------------*/
 .contenair-menu {
   position: relative;
   padding-bottom: 30px;
@@ -618,6 +645,7 @@ footer p:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  opacity: 0;
 }
 .menu--entries_title {
   white-space: nowrap;
@@ -653,6 +681,7 @@ footer p:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  opacity: 0;
 }
 .menu--plats_title {
   white-space: nowrap;
@@ -688,6 +717,7 @@ footer p:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  opacity: 0;
 }
 .menu--desserts_title {
   white-space: nowrap;
@@ -706,6 +736,56 @@ footer p:hover {
 .menu--desserts_title_txt__price {
   padding-right: 20px;
   font-weight: bold;
+}
+
+.animation--1 {
+  animation: animation-menu 0.4s 0.2s linear forwards;
+  -webkit-animation: animation-menu 0.4s 0.2s linear forwards;
+}
+
+.animation--2 {
+  animation: animation-menu 0.4s 0.5s linear forwards;
+  -webkit-animation: animation-menu 0.4s 0.5s linear forwards;
+}
+
+.animation--3 {
+  animation: animation-menu 0.4s 0.8s linear forwards;
+  -webkit-animation: animation-menu 0.4s 0.8s linear forwards;
+}
+
+.animation--4 {
+  animation: animation-menu 0.4s 1.1s linear forwards;
+  -webkit-animation: animation-menu 0.4s 1.1s linear forwards;
+}
+
+.animation--5 {
+  animation: animation-menu 0.4s 1.4s linear forwards;
+  -webkit-animation: animation-menu 0.4s 1.4s linear forwards;
+}
+
+.animation--6 {
+  animation: animation-menu 0.4s 1.7s linear forwards;
+  -webkit-animation: animation-menu 0.4s 1.7s linear forwards;
+}
+
+.animation--7 {
+  animation: animation-menu 0.4s 2s linear forwards;
+  -webkit-animation: animation-menu 0.4s 2s linear forwards;
+}
+
+.animation--8 {
+  animation: animation-menu 0.4s 2.3s linear forwards;
+  -webkit-animation: animation-menu 0.4s 2.3s linear forwards;
+}
+
+.animation--9 {
+  animation: animation-menu 0.4s 2.6s linear forwards;
+  -webkit-animation: animation-menu 0.4s 2.6s linear forwards;
+}
+
+.animation--10 {
+  animation: animation-menu 0.4s 2.9s linear forwards;
+  -webkit-animation: animation-menu 0.4s 2.9s linear forwards;
 }
 
 .menu--spinner {
