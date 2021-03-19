@@ -709,6 +709,7 @@ footer p:hover {
   text-overflow: ellipsis;
   display: flex;
   cursor: pointer;
+  opacity: 0;
 }
 .menu--entries_title {
   white-space: nowrap;
@@ -758,6 +759,7 @@ footer p:hover {
   text-overflow: ellipsis;
   display: flex;
   cursor: pointer;
+  opacity: 0;
 }
 .menu--plats_title {
   white-space: nowrap;
@@ -807,6 +809,7 @@ footer p:hover {
   text-overflow: ellipsis;
   display: flex;
   cursor: pointer;
+  opacity: 0;
 }
 .menu--desserts_title {
   white-space: nowrap;

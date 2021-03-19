@@ -709,6 +709,7 @@ footer p{
     @include menu;
     display: flex;
     cursor: pointer;
+    opacity: 0;
 }
 
 .menu--entries{
@@ -728,6 +729,7 @@ footer p{
     @include menu;
     display: flex;
     cursor: pointer;
+    opacity: 0;
 }
 
 .menu--plats{
@@ -747,6 +749,7 @@ footer p{
     @include menu;
     display: flex;
     cursor: pointer;
+    opacity: 0;
 }
 
 .menu--desserts{
