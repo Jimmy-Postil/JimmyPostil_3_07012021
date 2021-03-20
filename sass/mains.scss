@@ -454,11 +454,9 @@ header{
     right: 20px;
     font-size: 1.8em;
     &:hover{
+        @include heart;
         z-index: 2;
         opacity: 1;
-        background: -webkit-linear-gradient($color-primary, $color-secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         transition: 1s;
         -webkit-transition: 1s;
         -moz-transition: 1s;
@@ -658,11 +656,9 @@ footer p{
             font-size: 1.7em;
             margin-top: -11px;
             &:hover{
+                @include heart;
                 z-index: 2;
                 opacity: 1;
-                background: -webkit-linear-gradient($color-primary, $color-secondary);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
                 transition: 0.5s;
             }
            

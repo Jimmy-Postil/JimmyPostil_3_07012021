@@ -440,11 +440,11 @@ header {
   font-size: 1.8em;
 }
 .restaurants--icon2:hover {
-  z-index: 2;
-  opacity: 1;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 2;
+  opacity: 1;
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
@@ -649,11 +649,11 @@ footer p:hover {
   margin-top: -11px;
 }
 .heart--icon__icon2:hover {
-  z-index: 2;
-  opacity: 1;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 2;
+  opacity: 1;
   transition: 0.5s;
 }
 
