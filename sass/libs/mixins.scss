@@ -1,4 +1,4 @@
-@mixin responsive{
+@mixin mobile{
     @media screen and (max-width: map-get($responsive, mobile)){
         @content
     }
