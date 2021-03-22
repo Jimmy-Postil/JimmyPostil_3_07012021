@@ -488,6 +488,7 @@ footer h3 {
 }
 
 footer p {
+  z-index: 0;
   font-family: "Roboto", sans-serif;
   font-size: 1.1em;
   margin: 0%;
